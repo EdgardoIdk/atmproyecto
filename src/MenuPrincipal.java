@@ -2,18 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
+import java.awt.Color;
 /**
  *
  * @author edgar
  */
 public class MenuPrincipal extends javax.swing.JFrame {
 
+     
     /**
      * Creates new form MenuPrincipal
      */
     public MenuPrincipal() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -25,21 +27,218 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        btn4 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btnMas = new javax.swing.JButton();
+        btn0 = new javax.swing.JButton();
+        btnMenos = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
+        btnConsulta = new javax.swing.JButton();
+        btnDeposito = new javax.swing.JButton();
+        btnRecarga = new javax.swing.JButton();
+        btnRetiro = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(0, 205, 208));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 270, 80));
+
+        btn4.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn4.setText("4");
+        jPanel1.add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 40, 30));
+
+        btn2.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 40, 30));
+
+        btn3.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn3.setText("3");
+        jPanel1.add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 40, 30));
+
+        btn5.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn5.setText("5");
+        jPanel1.add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 40, 30));
+
+        btn6.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn6.setText("6");
+        jPanel1.add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 40, 30));
+
+        btn7.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn7.setText("7");
+        jPanel1.add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 40, 30));
+
+        btn8.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn8.setText("8");
+        jPanel1.add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 40, 30));
+
+        btn9.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn9.setText("9");
+        jPanel1.add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 40, 30));
+
+        btnMas.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btnMas.setText("+");
+        jPanel1.add(btnMas, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 40, 30));
+
+        btn0.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn0.setText("0");
+        jPanel1.add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 40, 30));
+
+        btnMenos.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btnMenos.setText("-");
+        jPanel1.add(btnMenos, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 40, 30));
+
+        btn1.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
+        btn1.setText("1");
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 40, 30));
+
+        btnCancelar.setBackground(new java.awt.Color(255, 0, 0));
+        btnCancelar.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
+        btnCancelar.setText("SALIR");
+        btnCancelar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnCancelarMouseMoved(evt);
+            }
+        });
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 100, 30));
+
+        btnConsulta.setText("CONSULTA");
+        btnConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnConsulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 100, 50));
+
+        btnDeposito.setText("DEPOSITO");
+        btnDeposito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDepositoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnDeposito, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 100, 50));
+
+        btnRecarga.setText("RECARGA");
+        btnRecarga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRecargaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRecarga, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 100, 50));
+
+        btnRetiro.setText("RETIRO");
+        btnRetiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRetiroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRetiro, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, 100, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
+        
+        consulta newframe1 = new consulta(); //llamar a Consulta
+        newframe1.setVisible(true);//Linea que ya la abre
+        
+        this.dispose();//este metodo sirve para cerrar la otra ventana pueden copiar y pegar si quieren
+    }//GEN-LAST:event_btnConsultaActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        
+        inicio newframe = new inicio(); 
+        newframe.setVisible(true);
+        
+        this.dispose();
+        
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void btnCancelarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarMouseMoved
+
+    private void btnDepositoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDepositoActionPerformed
+        // TODO add your handling code here:
+        deposito newframe1 = new deposito(); //llamar a Consulta
+        newframe1.setVisible(true);//Linea que ya la abre
+        
+        this.dispose();//este metodo sirve para cerrar la otra ventana pueden copiar y pegar si quieren
+        
+    }//GEN-LAST:event_btnDepositoActionPerformed
+
+    private void btnRecargaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecargaActionPerformed
+        
+        recarga newframe1 = new recarga(); 
+        newframe1.setVisible(true);//Linea que ya la abre
+        
+        this.dispose();//este metodo sirve para cerrar la otra ventana pueden copiar y pegar si quieren
+        
+    }//GEN-LAST:event_btnRecargaActionPerformed
+
+    private void btnRetiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetiroActionPerformed
+        
+        Retiro newframe1 = new Retiro(); 
+        newframe1.setVisible(true);
+        
+        this.dispose();
+        
+    }//GEN-LAST:event_btnRetiroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +276,25 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn0;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnConsulta;
+    private javax.swing.JButton btnDeposito;
+    private javax.swing.JButton btnMas;
+    private javax.swing.JButton btnMenos;
+    private javax.swing.JButton btnRecarga;
+    private javax.swing.JButton btnRetiro;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
